@@ -1,0 +1,27 @@
+// *{
+//     margin-top: 80px;
+// }
+
+// .container{
+// color: wheat;
+// background-image: url(/src/assets/img/wood-texture-table-top-counter-bar-blur-light-gold-bokeh-cafe-restaurant-background-montage-product-display-design-1391.jpg);
+// background-repeat: no-repeat;
+// background-attachment: scroll;
+// background-position: center center;
+// background-size: cover;
+// }
+
+
+.container{
+    background-image: url(../../../assets/img/background/bck1.webp);
+  //  background-repeat: no-repeat;
+    // height: 100vh;
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+}

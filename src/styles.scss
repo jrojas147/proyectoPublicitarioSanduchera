@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import '/src/assets/css/variables.scss';
+@import '/src//assets/css/fonts.scss';
+@import '/src/assets/css/mixins.scss';
+@import '~bootstrap/scss/bootstrap';
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -1,0 +1,43 @@
+@import '/src/assets/css/variables.scss';
+@import '/src/assets/css/fonts.scss';
+@import '/src/assets/css/mixins.scss';
+
+
+
+.navbar{
+    margin: 0 6%;
+    display: grid;
+    grid-template-columns: 50%  50%;
+    @include smallTablet{
+        
+    }
+    @include tabletLaptop{
+
+        margin: 0 4%;
+        
+    }
+    @include laptopDesktop{
+        margin: 0 6%; 
+    }
+    @include desktopFull{
+        margin: 0 13%;
+        
+    }
+    @include full{
+        margin: 0 13%;
+    }
+
+    .contaimerImage{
+        img{
+            width: 75px;
+        }
+        @include Asmall{
+            display: none;
+        }
+    }
+    .containerMenuNavigatios{
+        li{
+            margin: 1px 15px;
+        }
+    }
+}
