@@ -5,6 +5,7 @@
 
 
 .navbar{
+    background-color: #212529;
     margin: 0 6%;
     display: grid;
     grid-template-columns: 50%  50%;
@@ -17,7 +18,7 @@
         
     }
     @include laptopDesktop{
-        margin: 0 6%; 
+        margin: 0 4%; 
     }
     @include desktopFull{
         margin: 0 13%;
@@ -29,7 +30,7 @@
 
     .contaimerImage{
         img{
-            width: 75px;
+            width: 130px;
         }
         @include Asmall{
             display: none;
