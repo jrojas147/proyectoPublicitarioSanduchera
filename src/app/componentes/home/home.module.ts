@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
+import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 
 
 
@@ -9,7 +10,8 @@ import { HomeComponent } from './home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxWhastappButtonModule
   ],
   exports: [
     HomeComponent

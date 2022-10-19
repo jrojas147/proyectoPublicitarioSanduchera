@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  public phone = "+573212299883"
+  public title = "Hola Estoy interesado en comprar un sandwish";
 
   constructor() { }
 
