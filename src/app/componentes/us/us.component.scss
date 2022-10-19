@@ -1,17 +1,63 @@
-.page-section{
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+@import '/src/assets/css/fonts.scss';
+
+
+.page-section {
     margin: 0 5%;
     padding: 70px 0;
 
+    // @include Asmall {
+    //     background-color: aquamarine;
+    //     padding: 25px 0;
+    // }
+    // @include smallTablet {
+    //     background-color: blanchedalmond;
+    // }
+    // @include tabletLaptop {
+    //     background-color: cadetblue;
+    // }
+    // @include laptopDesktop {
+    //     background-color: darkgoldenrod;
+    // }
+    // @include desktopFull {
+    //     background-color: dimgrey;
+    // }
+    // @include full {
+    //     background-color: deepskyblue;
+    // }
 }
 
-.text-uppercase{
-    background-color: chartreuse;
+.text-uppercase {
     padding: 20px 0;
+    @include Asmall {
+        padding: 2px 0;
+    }
 }
 
-.imageUs{
-    img{
-    width: 350px;
-    border-radius: 50%;
+.container {
+    @include Asmall {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
+
+.section-subheading {
+    @include Asmall {
+        padding: 20px 0;
+        font-size: 22px;
+        text-align: justify;
+    }
+}
+
+.imageUs {
+    img {
+        width: 350px;
+        border-radius: 50%;
+
+        @include Asmall {
+            width: 250px;
+            padding: 20px 0;
+        }
+    }
 }

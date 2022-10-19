@@ -27,8 +27,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-No olvides que tienes a alguien qe le importas muchisimo, que siempre ha pensado y seguira pensadno que eres lo mejor.
-
-Generas paz tranquilidad en mi, a pesar de la distancia cada dia me enemoro mas de ti, eres la persona con quien quiero compartir el resto de mi vida.
-
-Te amo mi cielito

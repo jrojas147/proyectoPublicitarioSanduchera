@@ -1,18 +1,8 @@
-// *{
-//     margin-top: 80px;
-// }
-
-// .container{
-// color: wheat;
-// background-image: url(/src/assets/img/wood-texture-table-top-counter-bar-blur-light-gold-bokeh-cafe-restaurant-background-montage-product-display-design-1391.jpg);
-// background-repeat: no-repeat;
-// background-attachment: scroll;
-// background-position: center center;
-// background-size: cover;
-// }
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
 
 
-.container{
+.container {
   padding-top: 15.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -27,33 +17,40 @@
   height: 100vh;
   flex-wrap: wrap;
   align-content: center;
+  @include Asmall {
+    padding-top: 9.5rem;
+  }
 }
 
-
-
-.textWeolcome{
+.textWeolcome {
   align-items: center;
   justify-content: center;
   color: rgb(247, 247, 240);
   font-weight: 600;
   font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
 }
 
-
-.textInvitation{
+.textInvitation {
   font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 4rem;
+  @include Asmall {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+  }
 }
-
 
 .btn-primary {
   color: #fff;
   background-color: #ffc800;
   border-color: #ffc800;
   font-weight: 800;
+
+  @include Asmall {
+    font-size: 20px;
+  }
 }
