@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-booking',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./booking.component.scss']
 })
 export class BookingComponent implements OnInit {
+  public formClient: FormGroup;
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
+    this.createForm();
+  }
+
+  private createForm(){
+    this.formClient = this.formBuilder.group({
+      
+    });
   }
 
 }

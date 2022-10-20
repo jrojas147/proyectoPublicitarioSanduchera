@@ -17,9 +17,25 @@
   height: 100vh;
   flex-wrap: wrap;
   align-content: center;
+  max-width: 100%;
   @include Asmall {
     padding-top: 9.5rem;
   }
+  // @include smallTablet{
+  //   width: 2000px;
+  // }
+  // @include tabletLaptop{
+  //   width: 2000px;
+  // }
+  // @include laptopDesktop{
+  //   width: 2000px;
+  // }
+  // @include desktopFull{
+  //   width: 2000px;
+  // }
+  // @include full{
+  //   max-width: 100%;
+  // }
 }
 
 .textWeolcome {
