@@ -1,4 +1,17 @@
-// .containerProducts{
-//     background-image: url(../../../assets/img/photo-1559925393-8be0ec4767c8.jpg);
-//     height: 100vh;
-// }
+@import '/src/assets/css/mixins.scss';
+@import '/src/assets/css/variables.scss';
+
+
+
+.titleComponent{
+    padding: 25px;
+}
+
+.subtitleComponent{
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+img{
+    width: 73%;
+}

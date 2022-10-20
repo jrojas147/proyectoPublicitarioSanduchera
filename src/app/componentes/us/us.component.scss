@@ -3,61 +3,48 @@
 @import '/src/assets/css/fonts.scss';
 
 
-.page-section {
-    margin: 0 5%;
-    padding: 70px 0;
-
-    // @include Asmall {
-    //     background-color: aquamarine;
-    //     padding: 25px 0;
-    // }
-    // @include smallTablet {
-    //     background-color: blanchedalmond;
-    // }
-    // @include tabletLaptop {
-    //     background-color: cadetblue;
-    // }
-    // @include laptopDesktop {
-    //     background-color: darkgoldenrod;
-    // }
-    // @include desktopFull {
-    //     background-color: dimgrey;
-    // }
-    // @include full {
-    //     background-color: deepskyblue;
-    // }
-}
-
-.text-uppercase {
+h2{
+    text-transform: uppercase;
     padding: 20px 0;
+    font-weight: 700px;
     @include Asmall {
         padding: 2px 0;
     }
-}
-
-.container {
-    @include Asmall {
-        margin-left: 0;
-        margin-right: 0;
+    @include full{
+        padding: 3% 0;
     }
 }
 
-.section-subheading {
-    @include Asmall {
-        padding: 20px 0;
-        font-size: 22px;
-        text-align: justify;
+.containerUs{
+ //   background-color: antiquewhite;
+    @include full{
+        padding: 5% 4%;
     }
 }
 
 .imageUs {
-    img {
-        width: 350px;
-        border-radius: 50%;
+  //  background-color: chartreuse;
 
-        @include Asmall {
-            width: 250px;
-            padding: 20px 0;
-        }
+}
+
+img {
+    width: 350px;
+    border-radius: 50%;
+    @include Asmall {
+        width: 250px;
+        padding: 20px 0;
+    }
+    @include full{
+        width: 440px;
+    }
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    @include Asmall {
+        padding: 25px 0;
+        font-size: 18px;
+     
     }
 }

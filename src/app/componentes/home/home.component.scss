@@ -19,7 +19,13 @@
   align-content: center;
   max-width: 100%;
   @include Asmall {
-    padding-top: 9.5rem;
+    padding-top: 18.5rem;
+  }
+  @include desktopFull{
+    padding-top: 10.5rem;
+  }
+  @include full{
+    padding-top: 18.5rem;
   }
   // @include smallTablet{
   //   width: 2000px;
@@ -33,9 +39,7 @@
   // @include desktopFull{
   //   width: 2000px;
   // }
-  // @include full{
-  //   max-width: 100%;
-  // }
+
 }
 
 .textWeolcome {

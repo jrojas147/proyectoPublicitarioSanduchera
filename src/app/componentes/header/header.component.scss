@@ -3,34 +3,93 @@
 @import '/src/assets/css/mixins.scss';
 
 
+$amarillo: #ffc800;
+$blanco: #ffff;
+
 
 .navbar {
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: #212529;
-    @include full{
-       height: 80px;
+    @include Asmall {
+        height: 65px;
+    }
+    @include smallTablet {
+        height: 65px;
+    }
+    @include tabletLaptop {
+      //  background-color: darkolivegreen;
+    }
+
+
+    @include full {
+        height: 80px;
     }
 }
 
 
 .contaimerImage {
-    img {
-        width: 130px;
-    }
     @include Asmall {
         display: none;
     }
-    @include full{
+    @include smallTablet {
+        margin-left: 50px;
+    }
+    @include tabletLaptop {
+        margin-left: 50px;
+    }
+    @include desktopFull {
+        margin-left: 100px;
+    }
+    @include full {
         margin-left: 135px;
-     }
-}
-
-.containerMenuNavigatios {
-    text-align: end;
-    background-color: burlywood;
-    li {
-        margin: 1px 15px;
     }
 }
 
+img {
+    width: 200px;
+    @include smallTablet {
+        width: 160px;
+    }
+    @include full {
+        width: 240px;
+    }
+}
+
+.containerMenuNavigatios {
+    // @include Asmall{
+    //     display: none;
+    // }
+    @include desktopFull {
+        padding-left: 110px;
+    }
+    @include full {
+        padding-left: 300px;
+    }
+}
+
+ul {
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+
+    @include full {
+        font-size: 19px;
+        font-weight: 500;
+    }
+
+}
+
+a {
+    color: $blanco;
+}
+
+ul li a:hover {
+    color: $amarillo;
+    font-weight: 600;
+}

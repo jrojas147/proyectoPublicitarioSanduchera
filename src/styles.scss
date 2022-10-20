@@ -2,21 +2,44 @@
 @import '/src//assets/css/fonts.scss';
 @import '/src/assets/css/mixins.scss';
 @import '~bootstrap/scss/bootstrap';
-
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
-
-
-
-
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+
+// html {
+//   height: 100%;
+// }
+
+// body {
+//   height: 100%;
+// }
+
+
+
+.containerComponent{
+ // background-color: dodgerblue;
+  height: 100%;
+  @include Asmall{
+    margin: 40% 5% 5% 5%;
+    padding: 7% 3%;
+
+  }
+
+  @include desktopFull{
+    margin: 0 8%;
+    padding: 7% 3%;
+  }
+
+  @include full {
+    margin: 0 8%;
+    padding: 7% 3%;
+  }
+
+}
+
+
+
+
 
 
 
