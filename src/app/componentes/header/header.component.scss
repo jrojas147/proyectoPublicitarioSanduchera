@@ -30,7 +30,7 @@ $blanco: #ffff;
 
 .contaimerImage {
     @include Asmall {
-        display: none;
+        display: block;
     }
     @include smallTablet {
         margin-left: 50px;
