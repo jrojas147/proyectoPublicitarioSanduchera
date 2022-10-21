@@ -3,6 +3,35 @@
 @import '/src/assets/css/fonts.scss';
 
 
+.containerComponenUst{
+    height: 92vh;
+    @include Asmall{
+        margin: 0 8%;
+        padding: 10% 1%;
+    }
+    @include smallTablet{
+        margin: 0 8%;
+        padding: 10% 1%;
+    }
+    @include tabletLaptop{  
+        margin: 0 8%;
+        padding: 10% 2%;
+    }
+    @include laptopDesktop{
+        margin: 0 8%;
+        padding: 10% 2%;
+    }
+    @include desktopFull {
+        margin: 0 8%;
+        padding: 5% 4%;
+    }
+    @include full {
+        margin: 0 8%;
+        padding: 5% 4%;
+    }
+}
+
+
 h2{
     text-transform: uppercase;
     padding: 20px 0;
@@ -45,6 +74,12 @@ p {
     @include Asmall {
         padding: 25px 0;
         font-size: 18px;
-     
+    }
+    @include smallTablet{
+        margin-top: 25px;
+    }
+    @include full{
+        padding: 25px 0;
+        font-size: 24px;
     }
 }

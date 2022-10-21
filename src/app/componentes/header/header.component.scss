@@ -2,9 +2,9 @@
 @import '/src/assets/css/fonts.scss';
 @import '/src/assets/css/mixins.scss';
 
-
 $amarillo: #ffc800;
 $blanco: #ffff;
+$negro: #212529;
 
 
 .navbar {
@@ -26,7 +26,6 @@ $blanco: #ffff;
         height: 80px;
     }
 }
-
 
 .contaimerImage {
     @include Asmall {
@@ -57,9 +56,12 @@ img {
 }
 
 .containerMenuNavigatios {
-    // @include Asmall{
-    //     display: none;
-    // }
+    @include Asmall{
+        display: none;
+    }
+    @include smallTablet{
+        display: none;
+    }
     @include desktopFull {
         padding-left: 110px;
     }
@@ -93,3 +95,77 @@ ul li a:hover {
     color: $amarillo;
     font-weight: 600;
 }
+
+
+.respmenu{
+    display: flex;
+    place-content: space-between;
+
+    @include tabletLaptop {
+        display: none;
+    }
+    @include desktopFull {
+        display: none;
+    }
+    @include full {
+        display: none;
+    }
+
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+#menu-check:not(:checked) ~ nav{
+    display: none;
+}
+
+#menu-check :checked ~ nav{
+    display: block;
+
+}
+
+#menu{
+    background-color: $negro;
+    color: $blanco;
+    border: 2px solid $blanco;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    right:  0.5em;
+    top: 0.5em;
+    width: 50px;
+    text-align: center;
+    
+}
+
+#menu:hover{
+    color: $amarillo;
+    border: 2px solid $amarillo;
+}
+
+#menu-cerrar{
+    display: none;
+}
+
+.respmenu nav{
+    position: absolute;
+    right: 2px;
+    top: 65px;
+    height: 130px;
+    width: 100%;
+    background-color: $negro;
+    padding: 6px 35px;
+
+}
+
+
+.respmenu nav li{
+    display: block;
+    padding: 3px;
+}
+
+
