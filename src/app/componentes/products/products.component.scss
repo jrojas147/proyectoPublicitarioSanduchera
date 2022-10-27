@@ -1,10 +1,12 @@
 @import '/src/assets/css/mixins.scss';
 @import '/src/assets/css/variables.scss';
 
-
+.containerComponent{
+    background-color: brown;
+}
 
 .titleComponent{
-    padding: 25px;
+  //  padding: 25px;
 }
 
 .subtitleComponent{
@@ -18,4 +20,5 @@ img{
 
 .products{
     text-align: center;
+    background-color: aquamarine;
 }
