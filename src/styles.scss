@@ -6,6 +6,48 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+
+.containerComponent{
+    height: 100vh;
+    @include Asmall{
+        margin: 0 8%;
+        padding: 10% 1%;
+    }
+    @include smallTablet{
+        margin: 0 8%;
+        padding: 10% 1%;
+    }
+    @include tabletLaptop{
+        margin: 0 8%;
+        padding: 10% 2%;
+    }
+    @include laptopDesktop{
+        margin: 0 8%;
+        padding: 10% 2%;
+    }
+    @include desktopFull {
+        margin: 0 8%;
+        padding: 5% 4%;
+    }
+    @include full {
+        margin: 0 8%;
+        padding: 5% 4%;
+    }
+}
+
+
+
+
+
+h2{
+    text-transform: lowercase;
+}
+
+
+
+
+
+
 // html {
 //   height: 100%;
 // }

@@ -1,4 +1,8 @@
-// .page-section{
-//     background-color: aquamarine;
-//     height: 100vh;
-// }
+@import '/src/assets/css/variables.scss';
+@import '/src/assets/css/fonts.scss';
+@import '/src/assets/css/mixins.scss';
+
+
+.containerComponent{
+    height: 100hv;
+}
