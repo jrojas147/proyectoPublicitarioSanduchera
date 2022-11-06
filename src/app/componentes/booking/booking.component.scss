@@ -3,6 +3,37 @@
 @import '/src/assets/css/mixins.scss';
 
 
-.containerComponent{
-    height: 100hv;
+// .containerComponent{
+//     height: 100hv;
+// }
+
+.containerLocation{
+    background-color: aquamarine;
+    padding: 5px;
+    .containerMap{
+        background-color: blueviolet;
+        padding: 10px;
+
+        .map{
+            text-align: center;
+        }
+
+    }
+
+
+    .text{
+        padding: 50px;
+        .textContact{
+            
+        }
+        .contactDataImage{
+            img{
+                width: 215px;
+            }
+
+        }
+
+    }
+    
+
 }
