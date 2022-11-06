@@ -2,31 +2,103 @@
 @import '/src/assets/css/variables.scss';
 
 
+.subtitleComponent{
+    font-size: 20px;
+    margin-bottom: -10px;
+    @include Asmall{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+
+    @include tabletLaptop {
+        font-size: 18px;
+    }
+
+}
+
+.product {
+    .image {
+        padding: 20px;
+        @include Asmall{
+            text-align: center;
+            padding: 4px;
+        }
+        @include smallTablet{
+            text-align: center;
+            padding: 8px;
+        }
+        img {
+            border-radius: 10px;
+                @include Asmall {
+                    width: 350px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    padding: 5px 0;
+                }
+                @include smallTablet{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 380px;
+                    
+                }
+                @include tabletLaptop {
+                    margin-top: 30px;
+                    width: 350px;
+                }
+                @include laptopDesktop {
+                    margin-top: 30px;
+                    width: 400px;
+                }
+                @include desktopFull {
+                    margin-top: 30px;
+                    width: 430px;
+                }
+                @include full {
+                    margin-top: 15px;
+                    width: 535px;
+                }
+
+        }
+    }
+
+
+
+        .textContent{
+            text-align: justify;
+            padding: 5px 10px;
+            font-size: 500px;
+            @include Asmall {
+                font-size: 18px;
+            }
+            @include smallTablet{
+                font-size: 18px;
+            }
+            @include tabletLaptop {
+                font-size: 15px;
+            }
+            @include laptopDesktop {
+                font-size: 17px;
+            }
+            @include desktopFull {
+                font-size: 18px;
+            }
+            @include full{
+                padding: 50px 10px;
+                font-size: 23px;
+            }
+        }
 
 
 
 
 
-    // .titleComponent{
-    //     padding-top: 50px;
-    //     .containerTitle{
-    //         text-transform: uppercase;
-    //     }
-    // }
-
-    // .subtitleComponent{
-    //     text-align: initial;
-    //     padding: 20px 0px;
-    // }
-
-    // .product{
-    //     .image{
-    //         padding: 20px;
-    //     }
-    //     .text{
-    //         p{
-    //             padding: 15px;
-    //         }
-
-    //     }
-    // }
+        ul {
+            color: #9B757D;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+ 
+}
