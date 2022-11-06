@@ -1,37 +1,78 @@
 <div class="containerComponent" id="order">
     <div class="titleComponent">
-        <h2 class="containerTitle">cONTACTANOS</h2> <br>
-        <h3 class="subtitleComponent">Nuestra especialidad son Sandwich, sin embargo tambien ofrecemos otros
-            productos de excelente calidad a tu disposicion.</h3><br>
+        <h2 class="containerTitle">Contactanos</h2> <br>
+        <!-- <h3 class="subtitleComponent">Si tienes dudas con nuestros productos dejanos tu mensaje, en brebe nos cominicaremos contigo.</h3> -->
+        <br>
     </div>
-    <div class="form">
-        <form [formGroup]="registerContact" class="datos-personales">
-            <!-- <mat-form-field appearance="outline" class="full-width">
-                <mat-label></mat-label>
-                <input
-                matInput
-                formControlName="nameClient"
-                required
-                maxlength="20"
-                >
-                <mat-error *ngIf="nameClient">Diligencia numero de calle </mat-error>
-              </mat-form-field> -->
+    <div class="row containerContact">
+        <div class="col containerForm">
+            <form [formGroup]="registerContact" class="formContact">
+                <div class="nameClient">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Indicannos tu nombre</mat-label>
+                        <input 
+                            matInput 
+                            type="text"
+                            formControlName="nameClient" 
+                            required maxlength="70">
+                        <mat-error *ngIf="nameNoValid">Necesitamos saber tu nombre</mat-error>
+                    </mat-form-field>
+                </div>
 
+                <div class="emailClient">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Indicanos tu email</mat-label>
+                        <input 
+                        matInput 
+                        type="email"
+                        formControlName="emailClient" 
+                        required maxlength="70">
+                        <mat-error *ngIf="emailNoValid">Necesitamos saber tu email</mat-error>
+                    </mat-form-field>
 
-        </form>
+                </div>
 
+                <div class="thelephoneClient">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Indicanos tu Telefono</mat-label>
+                        <input 
+                            matInput 
+                            type="tel"
+                            formControlName="thelephoneClient" 
+                            required 
+                            maxlength="70">
+                        <mat-error *ngIf="thelephoneNoValid">Necesitamos saber tu telefono de contacto</mat-error>
+                    </mat-form-field>
+                </div>
 
-    </div>
-    <div class="contactSocialNetwork">
-        <div class="paraf">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum quos quasi ullam. Commodi a
+                <div class="noteClient">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Indicanos tu inquietud</mat-label>
+                        <textarea
+                         matInput
+                         formControlName="NotesClient"
+                         required 
+                         >
+                        </textarea>
+                        <mat-error *ngIf="notesNoValid">Indicanos tu inquietud</mat-error>
+                      </mat-form-field>
+                </div>
+
+                <div class="containerBotoon">
+                    <button 
+                        (click)="procesForm()"
+                        [disabled] = "registerContact.invalid"
+                        >Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="col containerText">
+            <p class="section-subheading text-muted">
+                Si tienes dudas con nuestros productos dejanos tu mensaje, en brebe nos cominicaremos contigo. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Dolorem earum quos quasi ullam. Commodi a
                 molestiae officia quam asperiores quis distinctio sunt dolore magnam. Aspernatur corporis sit rerum
                 possimus officiis.
             </p>
-        </div>
-        <div class="iconSocialNetwork">
-            iconSocialNetwork
         </div>
     </div>
 </div>

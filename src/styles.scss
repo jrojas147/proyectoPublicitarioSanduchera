@@ -35,13 +35,18 @@
     }
 }
 
-
-
-
-
-h2{
-    text-transform: lowercase;
+.containerTitle{
+    text-transform: uppercase;
+    padding: 15px 9px;
+    font-weight: 700;
 }
+
+
+
+
+
+
+
 
 
 
@@ -85,3 +90,6 @@ h2{
 
 
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

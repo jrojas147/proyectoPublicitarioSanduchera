@@ -1,0 +1,46 @@
+@import '/src/assets/css/variables.scss';
+@import '/src/assets/css/fonts.scss';
+@import '/src/assets/css/mixins.scss';
+
+
+.containerContact {
+    padding: 10px;
+
+    .containerForm {
+        .formContact {
+            border-radius: 5px;
+            padding: 35px;
+            mat-form-field {
+                width: 350px;
+                height: 70px;
+            }
+
+            .containerBotoon {
+                margin-top: 50px;
+                text-align: center;
+                button {
+                    color: black;
+                    background-color: #ffc800;
+                    border-color: #ffc800;
+                    font-weight: 800;
+                    width: 200px;
+                }
+
+                button:disabled {
+                    background: #ccc;
+                    border: #ccc;
+                    color: black;
+                  }
+            }
+        }
+    }
+
+    .containerText {
+        padding: 40px;
+
+    }
+
+
+
+
+}
