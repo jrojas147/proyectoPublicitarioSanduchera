@@ -8,10 +8,8 @@
 // }
 
 .containerLocation{
-    background-color: aquamarine;
     padding: 5px;
     .containerMap{
-        background-color: blueviolet;
         padding: 10px;
 
         .map{
@@ -24,13 +22,30 @@
     .text{
         padding: 50px;
         .textContact{
+            font-weight: 400;
             
+        }
+        .Contact{
+            padding: 25px 0px;
         }
         .contactDataImage{
             img{
                 width: 215px;
             }
 
+        }
+
+    }
+
+
+    .contactData{
+        .direccion{
+            font-weight: 700;
+        }
+        .telephone{
+            a{
+            color: black;
+        }
         }
 
     }
