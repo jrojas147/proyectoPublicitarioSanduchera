@@ -6,90 +6,50 @@
 @import '~bootstrap/scss/bootstrap';
 
 
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-.containerComponent{
+.containerComponent {
     height: 100vh;
-    @include Asmall{
+
+    @include Asmall {
+        margin: 16px 8%;
+        padding: 10% 1%;
+    }
+
+    @include smallTablet {
         margin: 0 8%;
         padding: 10% 1%;
     }
-    @include smallTablet{
-        margin: 0 8%;
-        padding: 10% 1%;
-    }
-    @include tabletLaptop{
+
+    @include tabletLaptop {
         margin: 0 8%;
         padding: 10% 2%;
     }
-    @include laptopDesktop{
+
+    @include laptopDesktop {
         margin: 0 8%;
         padding: 10% 2%;
     }
+
     @include desktopFull {
         margin: 0 8%;
         padding: 5% 4%;
     }
+
     @include full {
         margin: 0 8%;
         padding: 5% 4%;
     }
 }
 
-.containerTitle{
-    text-transform: uppercase;
-    padding: 15px 9px;
-    font-weight: 700;
+.titleComponent {
+    .containerTitle {
+        text-transform: uppercase;
+        padding: 15px 9px;
+        font-weight: 700;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// html {
-//   height: 100%;
-// }
-
-// body {
-//   height: 100%;
-// }
-
-
-
-// .containerComponent{
-//   background-color: dodgerblue;
-//   height: 100%;
-//   @include Asmall{
-//     margin: 40% 5% 5% 5%;
-//     padding: 7% 3%;
-
-//   }
-
-//   @include desktopFull{
-//     margin: 0 8%;
-//     padding: 7% 3%;
-//   }
-
-//   @include full {
-//     margin: 0 8%;
-//     padding: 7% 3%;
-//   }
-
-// }
-
-
-
-
-
-
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

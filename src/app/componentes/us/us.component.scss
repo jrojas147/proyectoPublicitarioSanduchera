@@ -4,37 +4,73 @@
 
 
 
+.containerTitle {
+    @include full {
+        margin-bottom: 50px;
+    }
+}
+
+.containerUs {
+    padding: 5px;
+    img {
+        width: 350px;
+        border-radius: 50%;
+        @include Asmall {
+            width: 250px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px 0;
+        }
+        @include smallTablet{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        @include tabletLaptop {
+            margin-top: 30px;
+        }
+        @include laptopDesktop {
+            margin-top: 30px;
+        }
+        @include desktopFull {
+            margin-top: 30px;
+        }
+        @include full {
+            margin-top: 15px;
+            width: 440px;
+        }
+    }
+
+    .textUS{
+        text-align: justify;
+        padding: 5px 10px;
+        @include Asmall {
+            font-size: 18px;
+        }
+
+
+        @include smallTablet{
+            font-size: 18px;
+        }
+        @include tabletLaptop {
+            font-size: 15px;
+        }
+        @include laptopDesktop {
+            font-size: 18px;
+        }
+        @include desktopFull {
+            font-size: 20px;
+        }
+        @include full{
+            padding: 50px 10px;
+            font-size: 23px;
+        }
+    }
+}
 
 
 
 
-// .titleComponent {
-//     padding-top: 50px;
-//     .containerTitle {
-//         text-transform: uppercase;
-//     }
-// }
-
-// .containerUs {
-//     @include full {
-//         padding: 5% 4%;
-//     }
-// }
-
-
-// img {
-//     width: 350px;
-//     border-radius: 50%;
-
-//     @include Asmall {
-//         width: 250px;
-//         padding: 20px 0;
-//     }
-
-//     @include full {
-//         width: 440px;
-//     }
-// }
 
 // p {
 //     text-align: justify;
@@ -61,15 +97,3 @@
 
 
 
-
-// h2{
-//     text-transform: uppercase;
-//     padding: 20px 0;
-//     font-weight: 700px;
-//     @include Asmall {
-//         padding: 2px 0;
-//     }
-//     @include full{
-//         padding: 3% 0;
-//     }
-// }
