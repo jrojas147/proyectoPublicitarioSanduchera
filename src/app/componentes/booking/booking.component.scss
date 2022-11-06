@@ -2,49 +2,150 @@
 @import '/src/assets/css/fonts.scss';
 @import '/src/assets/css/mixins.scss';
 
+.subtitleComponent{
+    font-size: 20px;
+    margin-bottom: -10px;
+    @include Asmall{
+        font-size: 16px;
+        text-align: justify;
+    }
+}
 
-// .containerComponent{
-//     height: 100hv;
-// }
 
-.containerLocation{
+.containerLocation {
     padding: 5px;
-    .containerMap{
+
+    .containerMap {
         padding: 10px;
-
-        .map{
+        text-align: center;
+        .mapGoogle {
             text-align: center;
-        }
 
-    }
-
-
-    .text{
-        padding: 50px;
-        .Contact{
-            padding: 25px 0px;
-        }
-        .contactDataImage{
-            img{
-                width: 215px;
+            @include Asmall {
+                width: 380px;
+                height: 250px;
             }
-
+            @include smallTablet {
+                width: 500px;
+                height: 300px;
+            }
+            @include tabletLaptop {
+                width: 430px;
+                height: 250px;
+            }
+            @include laptopDesktop {
+                width: 450px;
+                height: 280px;
+            }
+            @include desktopFull {
+                width: 480px;
+                height: 300px;
+            }
+            @include full {
+                width: 600px;
+                height: 450px;
+            }
         }
-
     }
 
+    .textContent {
+        padding: 50px;
+        text-align: justify;
+        padding: 5px 10px;
+        font-size: 500px;
 
-    .contactData{
-        .direccion{
-            font-weight: 700;
-        }
-        .telephone{
-            a{
-            color: black;
-        }
+        @include Asmall {
+            font-size: 18px;
         }
 
+        @include smallTablet {
+            font-size: 18px;
+        }
+
+        @include tabletLaptop {
+            font-size: 15px;
+        }
+
+        @include laptopDesktop {
+            font-size: 17px;
+        }
+
+        @include desktopFull {
+            font-size: 18px;
+        }
+
+        @include full {
+            padding: 50px 10px;
+            font-size: 23px;
+        }
+
+        .Contact {
+            padding: 25px 0px;
+            @include smallTablet {
+                padding: 0;
+            }
+            .contactDataImage{
+                img {
+                    @include Asmall {
+                        display: none;
+                    }
+                    @include smallTablet {
+                        width: 150px;
+                    }
+
+                    @include tabletLaptop {
+                        width: 150px;
+                    }
+                    @include laptopDesktop {
+                        width: 150px;
+                    }
+
+                    @include desktopFull {
+                        width: 170px;
+                    }
+                    @include full {
+                        width: 215px;
+                    }
+                    
+                }
+            }
+            .contactData{
+                .direccion {
+                    font-weight: 700;
+                }
+                .telephone {
+                    a {
+                        color: black;
+                    }
+                }
+                .iconSocialNetwork{
+                    display: inline-flex;
+                    padding: 5px 5px;
+                    @include tabletLaptop {
+                        padding: 5px 0px;
+                    }
+                    @include desktopFull {
+                        padding: 5px 0px;
+                    }
+                    .iconSocial{
+                        margin: 5px 20px;
+
+                        @include tabletLaptop {
+                            margin: 5px 10px;
+                            img{
+                                width: 45px;
+                            }
+                        }
+                        @include laptopDesktop {
+                            margin: 5px 12px;
+                        }
+                        @include desktopFull {
+                            margin: 5px 18px;
+                        }
+                    }
+                }
+
+            }
+        }
     }
-    
-
 }
