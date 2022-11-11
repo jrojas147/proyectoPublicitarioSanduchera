@@ -47,11 +47,20 @@ $negro: #212529;
 
 img {
     width: 200px;
+    @include Asmall {
+        width: 50px;
+    }
     @include smallTablet {
         width: 160px;
     }
+    @include tabletLaptop {
+        width: 65px;
+    }
+    @include desktopFull {
+        width: 60px;
+    }
     @include full {
-        width: 240px;
+        width: 65px;
     }
 }
 
